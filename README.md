@@ -1,5 +1,5 @@
 # netizen.nvim
-<img width="66%" height="66%" alt="image" src="https://github.com/user-attachments/assets/d680c964-e23c-4453-9d64-cfa7c8e57d13" />
+<img width=66% height=66% alt="image" src="https://github.com/user-attachments/assets/2e570feb-6868-407b-8e2d-edd0d523198f" />
 
 ## Installing
 ### [lazy.nvim](https://lazy.folke.io/installation)
