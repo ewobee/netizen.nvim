@@ -8,24 +8,24 @@ local TRANSPARENTS = {
 }
 
 local function apply_term_colors(colors)
-  vim.g.terminal_color_0 = colors.fg0
-  vim.g.terminal_color_1 = colors.dim_red
-  vim.g.terminal_color_2 = colors.dim_green
-  vim.g.terminal_color_3 = colors.dim_yellow
-  vim.g.terminal_color_4 = colors.dim_blue
-  vim.g.terminal_color_5 = colors.dim_purle
-  vim.g.terminal_color_6 = colors.dim_cyan
-  vim.g.terminal_color_7 = colors.fg2
-  vim.g.terminal_color_8 = colors.fg1
-  vim.g.terminal_color_9 = colors.red
-  vim.g.terminal_color_10 = colors.green
-  vim.g.terminal_color_11 = colors.yellow
-  vim.g.terminal_color_12 = colors.blue
-  vim.g.terminal_color_13 = colors.purple
-  vim.g.terminal_color_14 = colors.cyan
-  vim.g.terminal_color_15 = colors.fg0
-  vim.g.terminal_color_background = colors.bg
-  vim.g.terminal_color_foreground = colors.fg
+  vim.g.terminal_color_0 = colors.FG
+  vim.g.terminal_color_1 = colors.RED
+  vim.g.terminal_color_2 = colors.GREEN
+  vim.g.terminal_color_3 = colors.YELLOW
+  vim.g.terminal_color_4 = colors.BLUE
+  vim.g.terminal_color_5 = colors.MAGENTA
+  vim.g.terminal_color_6 = colors.CYAN
+  vim.g.terminal_color_7 = colors.FG2
+  vim.g.terminal_color_8 = colors.FG1
+  vim.g.terminal_color_9 = colors.RED
+  vim.g.terminal_color_10 = colors.GREEN
+  vim.g.terminal_color_11 = colors.YELLOW
+  vim.g.terminal_color_12 = colors.BLUE
+  vim.g.terminal_color_13 = colors.MAGENTA
+  vim.g.terminal_color_14 = colors.CYAN
+  vim.g.terminal_color_15 = colors.FG
+  vim.g.terminal_color_background = colors.BG
+  vim.g.terminal_color_foreground = colors.FG
 end
 
 local function apply(opts)
@@ -36,7 +36,7 @@ local function apply(opts)
   -- apply transparents
   if opts.transparent then
     for _, group in ipairs(TRANSPARENTS) do
-      groups[group].bg = nil
+      groups[group].BG = nil
     end
   end
 
