@@ -6,23 +6,54 @@ M.setup = function()
   return {
 	Normal			= { fg = colors.FG, bg = colors.BG }, --
 	NormalFloat		= { link = "Normal" }, --
-	Comment			= { fg = colors.GREY, italic = true }, --
 
-	Constant		= { fg = colors.FG2 }, --
-	Statement		= { fg = colors.RED }, --
-	PreProc			= { fg = colors.FG2 },
-	Define			= { fg = colors.FG, bold = true },
-	Type			= { fg = colors.YELLOW },
-	String			= { fg = colors.GREEN, italic = true },
+	-- Syntax --
+	
+	Comment			= { fg = colors.GREY, italic = true },
+	
+	Keyword			= { fg = colors.RED },
+	Statement		= { link = "Keyword" },
+	Conditional		= { link = "Keyword" },
+	Repeat			= { link = "Keyword" },
+	Label			= { link = "Keyword" },
+	Exception		= { link = "Keyword" },
+
+	String			= { fg = colors.GREEN, italic = true},
+	Character		= { link = "String" },
+
+	Number			= { fg = colors.FG2 },
+	Float			= { link = "Number" },
+	Boolean			= { link = "Number" },
+	Constant		= { link = "Number" },
+
 	Identifier		= { fg = colors.BLUE },
-	Function		= { fg = colors.CYAN },
-	Operator		= { fg = colors.FG },
+	Variable		= { link = "Identifier" },
+
+	Function		= { fg = colors.YELLOW, bold = true },
+	Method			= { link = "Function" },
+
+	Type			= { fg = colors.CYAN, italic = true },
+	StorageClass	= { link = "Type" },
+	Structure		= { link = "Type" },
+	Typedef			= { link = "Type" },
+
+	PreProc			= { fg = colors.RED },
+	Define			= { link = "PreProc" },
+	Macro			= { link = "PreProc" },
+	Include			= { link = "PreProc" },
+
+	Operator		= { fg = colors.FG2 },
+	Delimiter		= { link = "Operator" },
+
+	Include			= { link = "Keyword" },
+	Namespace		= { link = "Include" },
+
 	Special			= { fg = colors.FG2 },
-	Delimiter		= { fg = colors.FG },
-	Todo			= { bold = true },
+	Todo			= { fg = colors.HI },
+
+	-- ###### --
 
 	SpecialKey		= { fg = colors.GREY },
-	TermCursor		= {},
 	NonText			= { fg = colors.GREY },
 	Directory		= { fg = colors.CYAN },
 	ErrorMsg		= { fg = colors.RED },
