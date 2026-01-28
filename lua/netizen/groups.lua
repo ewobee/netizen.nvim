@@ -9,7 +9,7 @@ M.setup = function()
 		NormalNC = { fg = col.ui.fg_dim, bg = col.ui.bg },
 
 		-- Syntax --
-		Comment = { fg = col.syn.comment },
+		Comment = { fg = col.syn.comment, italic = true },
 
 		Constant = { fg = col.syn.constant },
 		String = { fg = col.syn.string },
@@ -18,8 +18,9 @@ M.setup = function()
 		Boolean = { fg = col.syn.constant, bold = true },
 		Float = { link = "Number" },
 
-		Identifier = { fg = col.syn.identifier },
 		Function = { fg = col.syn.func },
+		Identifier = { fg = col.syn.identifier },
+
 		Variable = { fg = col.syn.variable },
 		['@variable'] = { fg = col.ui.fg },
 		['@variable.member'] = { fg = col.syn.variable },
